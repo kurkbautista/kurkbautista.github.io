@@ -1,0 +1,508 @@
+/* Navigation Bar */
+
+
+#nav-bar {
+	position: sticky;
+	top:0;
+	z-index: 10;
+}
+
+.navbar-brand img{
+
+	padding-left: 30px;
+
+
+}
+
+.navbar-nav li{
+	padding: 0 10px;
+}
+
+.navbar-nav li a{
+	float: right;
+	text-align: left;
+
+}
+
+#nav-bar ul li a:hover{
+	color:red!important;
+}
+
+.navbar{
+	background:#fff;
+}
+
+.navbar-toggler {
+	border:none!important;
+}
+
+.nav-link{
+	color:#555!important;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+
+/* Slider*/
+
+
+#slider {
+	width: 100%;
+}
+
+.carousel-item img{
+	position: relative;
+	opacity: 0.5;
+	background-attachment: fixed;
+}
+
+.carousel-caption{
+	top:50%;
+	transform: translateY(-50%);
+	bottom:initial!important;
+}
+
+.carousel-caption h5{
+	color:#666;
+	font-size: 42px;
+
+	padding: 10px;
+
+}
+
+
+/* About Section */
+
+#about {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+
+#about .btn{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.about-content {
+	padding-top:20px;
+}
+
+.skills-bar p{
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+.progress-bar{
+	border-radius: 30px; /*refers to the border edge*/
+}
+
+.progress {
+	border-radius: 16px!important; 
+	margin-bottom: 20px;
+}
+
+/* Services Section */
+
+#services {
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/hd13.png);
+	background-size: cover;
+	background-position: center;
+	color:#efefef!important;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#services h1{
+	text-align: center;
+	color: #efefef!important;
+	padding-bottom: 10px;
+}
+
+/*creates an underline for the Services caption*/
+
+#services h1::after{ 
+	content: '';
+	background: #efefef;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+
+.services {
+	margin-top: 40px;
+}
+
+.icon{
+	font-size: 40px;
+	margin:20px auto;
+	padding:10px;
+	height:80px;
+	width:80px;
+	border:1px solid white;
+	border-radius: 20%; /*makes all the edges round thus creates a circle*/
+}
+
+#services p{
+	font-size: 14px;
+	margin-top: 20px;
+	color:#ccc;
+}
+
+.services .col-md-3:hover{
+	background: #007bff;
+	cursor:pointer;
+	color:black;
+	transition:0.7s;
+}
+.icon:hover{
+	font-size: 43px;
+}
+
+/* Team Members Section*/
+
+#team {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+
+h1{
+	text-align: center;
+	color: #555!important;
+	padding-bottom: 10px;
+}
+
+/*Underline for the Our Team caption*/
+
+h1::after{
+	content: '';
+	background: #007bff;
+	display: block;
+	height:3px;
+	width: 170px;
+	margin:20px auto 5px;
+}
+
+.profile-pic {
+	margin-top: 25px;
+
+}
+
+.profile-pic .img-box {
+	opacity: 1;
+	display: block;
+	position: relative;
+}
+/*Makes the image gray*/
+.profile-pic .img-box img{
+	filter: grayscale(1);
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+}
+/*Brings the color back when hovered */
+.profile-pic .img-box img:hover{
+	filter: grayscale(0);
+	cursor: pointer; /* makes the object clickable*/
+}
+
+.profile-pic h2{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #007bff!important;
+}
+
+.profile-pic h3{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+	text-align: center;
+}
+/*Social Media icons. No need to put the cursor pointer because it's an A tag*/
+#team .fa{
+	height: 25px;
+	width: 25px;
+	color: #007bff!important;/*blue font*/
+	background: #fff; /*white background*/
+	padding: 4px;
+	border-radius: 50%; 
+}
+
+.img-box ul{
+	padding:15px 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 50%
+	transform:translateX(-50%);
+	opacity:0;
+}
+
+.img-box ul li{
+	padding:5px;
+	display: inline-block; 
+	/*change to display: block if vertical, inline-block for horizontal*/
+}
+
+.img-box:hover ul{
+	opacity:1;
+}
+
+.img-box ul,.img-box ul li{
+	transition: 0.5s;
+}
+.col-md-3 p{
+	text-align: left;
+}
+/*Promo Section*/
+
+#promo {
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/hd11.png");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	background-attachment:fixed;
+	text-align: center;
+	padding: 100px;
+	font-family: sans-serif;
+	font-size: 38px;
+}
+
+/*Price Plan*/
+
+#price{
+	padding: 40px 0;
+	background: #efefef;
+}
+
+.single-price{
+	margin: 10px auto;
+	display: inline;
+	float: left;
+	width:100%;
+	background-color: #fff;
+	transition: 0.5s;
+}
+
+.single-price:hover{
+	box-shadow: 0 2px 20px #333;
+}
+
+.price-head{
+	background-color: #2196f3;
+	display: inline;
+	float: left;
+	padding: 10px 5px;
+	text-align: center;
+	width:100%;
+
+}
+
+.price-head h2{
+	color:#fff;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom; 5px;
+	padding:5px;
+	text-transform: uppercase;
+}
+
+.price-head p{
+	font-size: 25px;
+	color:#ccc;
+	font-weight: bold;
+	line-height:30px;
+	text-align: center;
+}
+
+#price span{
+	font-size: 15px;
+
+}
+
+.price-content {
+	display:inline;
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.price-content ul li{
+	border-bottom: 1px solid #efefef;
+	padding: 10px;
+	list-style: none;
+}
+
+ul li:last-child{
+	border: none;
+}
+
+.fa-check-circle{
+	color: green;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.fa-times-circle{
+	color: red;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.price-button{
+	display:inline;
+	float: left;
+	padding: 15px 15px 30px;
+	text-align: center;
+	width:100%;
+}
+
+.buy-btn {
+	background-color: #2196f3;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 18px;
+	padding: 15px 50px;
+	transition:0.5s;
+}
+
+.buy-btn:hover{
+	border-color: 1px solid #fff;
+	background-color: #3f51b5;
+}
+
+a{
+	text-decoration: none!important;
+	color: #fff!important;
+}
+
+/*Testimonials*/
+
+#testimonials{
+	padding-top: 50px;
+
+}
+
+#testimonials .row{
+	margin-top: 30px;
+
+}
+
+.col-md-4{
+	margin:40px auto;
+
+}
+
+.profile{
+	padding: 70px 10px 10px;
+	background-color: #efefef;
+}
+
+.user{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%
+}
+
+.profile img{
+	top:-60px;
+	position: absolute;
+	left:calc(50% - 60px);
+	border:10px solid white;
+}
+
+.profile h3{
+	font-size: 20px;
+	margin-top: 15px;
+	color: #007bff;
+}
+
+#testimonials span{
+	font-size: 12px;
+	color: #333;
+}
+
+blockquote{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+
+/*Quotation Mark icon*/
+
+blockquote::before{
+	content:'\93';
+	font-size: 50px;
+	color: #007bff;
+	position: relative;
+	line-height: 20px;
+	bottom: -15px;
+	right: 5px;
+}
+
+blockquote::after{
+	content:'\94';
+	font-size: 50px;
+	color: #007bff;
+	position: relative;
+	line-height: 10px;
+	bottom: -15px;
+	right: 5px;
+}
+
+.profile:hover{
+	box-shadow: 0 0 15px 15px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+/*Get In Touch*/
+
+#contact {
+	background-color: #efefef;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #777;
+}
+
+.contact-form {
+	padding: 15px;
+}
+
+.form-control{
+	border-radius:0!important;
+	border:none!important;
+}
+
+::placeholder{
+	color: #999!important;
+}
+
+.follow{
+	background:#fff;
+	padding: 10px;
+	margin: 15px;
+}
+
+.contact-info .fa{
+	margin: 10px;
+	color: #007bff;
+	font-weight: bold;
+}
+
+/**/
+
+#footer{
+	background: #333;	
+	color: #fff;
+	padding:12px;
+}
+
+.fa-heart-o{
+	margin: 3px;
+	color:red;
+}
